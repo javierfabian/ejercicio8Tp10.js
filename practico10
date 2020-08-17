@@ -1,0 +1,16 @@
+let  unTexto  =  'AraR decia mi abuelo que eso no te va a lastimar, AraR y AraR.' ;
+let  ocurrencias  =  0 ;
+let idx = 0;
+palabraB = 0; 
+for  ( idx  =  0 ;  idx  <  (unTexto . length); idx ++)  {
+    if  ( unTexto [ idx ]  ===  'A' ){
+        ocurrencias ++ ;
+    }
+    if  ( unTexto [ idx ]  ===  'R' ){
+        ocurrencias ++ ;
+        ocurrencias = palabraB;
+        palabraB++;
+    }
+}
+
+console . log ( `La cantidad de palabras que comienzan con A y finalizan con R son: ${palabraB} ` );
